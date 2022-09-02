@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+
+    <script>
+
+        var valor1 = parseInt(prompt("Insira o primeiro valor"));
+        var valor2 = parseInt(prompt("Insira o segundo valor"));
+        var valor3 = parseInt(prompt("Insira o terceiro valor"));
+        var valor4 = parseInt(prompt("Insira o quarto valor"));
+        var acumuladora = 0
+
+        if(valor1 > 0 && valor1 < 10 ){
+            acumuladora += valor1
+        }
+        if(valor2 > 0 && valor2 < 10 ){
+            acumuladora += valor2
+        }
+        if(valor3 > 0 && valor3 < 10 ){
+            acumuladora += valor3
+        }
+        if(valor4 > 0 && valor4 < 10 ){
+            acumuladora += valor4
+        }
+
+        var media = acumuladora / 4;
+
+       if(media > 5){
+            alert("Você passou no teste!")
+        }
+        else{
+            alert("tente novamente...")
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
