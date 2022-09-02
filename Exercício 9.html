@@ -8,10 +8,15 @@
 
     <script>
 
-       var ano = parseInt(prompt("Informe o seu ano de nascimento para saber se você pode ou não votar."));
-        if(ano <= 2006){
-            alert("Parabéns! Você já tem idade suficiente para votar. Vá tirar o seu titulo de eleitor IMEDIATAMENTE. Obrigada!")
-        } else{
+        
+        var ano = parseInt(prompt("Informe o seu ano de nascimento para saber se você pode ou não votar."));
+        if(ano <= 2006 && ano >= 2004){
+            alert("Parabéns! Você já tem idade suficiente para votar. O voto é opcional.");
+        }
+            else if(ano <= 2004){
+                alert("Você já é obrigado a votar, tire o seu titulo imediatamente!")
+            }
+         else{
             alert("Infelizmente, você ainda não tem idade para votar.")
         }
 
